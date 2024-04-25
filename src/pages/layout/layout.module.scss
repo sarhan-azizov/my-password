@@ -1,0 +1,58 @@
+.wrapper {
+    width: 100%;
+    background: no-repeat #00084d url('./svg/builld-cloud-header-glow.svg') center bottom;
+    background-size: cover;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 500px;
+    min-width: 800px;
+}
+
+.mainHeader {
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    display: flex;
+    align-items: center;
+}
+
+.mainContent {
+    margin: auto;
+}
+
+.contentWrapper {
+    display: flex;
+    min-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.mainFooter {
+    height: 50px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 800px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 7vw;
+        top: -7vw;
+        mask: url("./svg/curved-section-top.svg") bottom center no-repeat;
+        background: inherit;
+    }
+}
+
+.copyright {
+    color: #333;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+}
+
