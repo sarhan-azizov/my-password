@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "react-app-rewire-alias": "^1.1.7",
     "react-app-rewired": "^2.2.1",
     "webpack-bundle-analyzer": "^4.10.2"

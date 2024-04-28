@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-
 import { NotFoundPage, LayoutPage, SignInPage, MyPasswordsPage } from './pages';
 
 const App = () => (
