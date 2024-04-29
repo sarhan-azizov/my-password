@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styles from './sign-in.module.scss';
 
 export const SignInPage = () => {
@@ -15,7 +17,11 @@ export const SignInPage = () => {
             </label>
             <div className={styles.signInFooter}>
                 <button className={`${styles.button} ${styles.createAccount}`}>Create an Account</button>
-                <button className={styles.button}>Sign In</button>
+                <button className={styles.button}>
+                    <Link to="my-passwords">
+                        Sign In
+                    </Link>
+                </button>
             </div>
         </div>
     )
