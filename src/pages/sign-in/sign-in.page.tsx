@@ -1,8 +1,10 @@
-import { Link } from 'react-router-dom';
+import { useNavigate, NavigateFunction } from 'react-router-dom';
 
 import styles from './sign-in.module.scss';
 
-export const SignInPage = () => {
+export const SignInPage = (a: any) => {
+    const navigate: NavigateFunction = useNavigate();
+
     return (
         <div className={styles.signIn}>
             <h1 className={styles.title}>Sign in</h1>
@@ -17,10 +19,8 @@ export const SignInPage = () => {
             </label>
             <div className={styles.signInFooter}>
                 <button className={`${styles.button} ${styles.createAccount}`}>Create an Account</button>
-                <button className={styles.button}>
-                    <Link to="my-passwords">
-                        Sign In
-                    </Link>
+                <button className={styles.button} onClick={() => navigate("/my-passwords")}>
+                    Sign In
                 </button>
             </div>
         </div>
